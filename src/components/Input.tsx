@@ -4,7 +4,11 @@ type InputProps = {
 };
 
 const Input = ({ handleChange, value }: InputProps) => {
-  return <input type="text" onChange={handleChange} value={value} />;
+    return (
+        <div>
+            <input type="text" onChange={handleChange} value={value} />;
+      </div>
+  )
 };
 
 export default Input
